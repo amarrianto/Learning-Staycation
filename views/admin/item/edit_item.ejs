@@ -2,7 +2,7 @@
   class="tab-pane fade show active"
   id="edit-item"
   role="tabpanel"
-  aria-labelledby="contact-tab"
+  aria-labelledby="profile-tab"
 >
   <div class="card shadow mb-4 mt-2">
     <div class="card-body">
@@ -18,7 +18,7 @@
             class="form-control"
             name="title"
             value="<%= item.title %>"
-            placeholder="Enter Title"
+            placeholder="Enter title"
             required
           />
         </div>
@@ -29,7 +29,7 @@
             class="form-control"
             name="price"
             value="<%= item.price %>"
-            placeholder="Enter Price"
+            placeholder="Enter price"
             required
           />
         </div>
@@ -40,7 +40,7 @@
             class="form-control"
             name="city"
             value="<%= item.city %>"
-            placeholder="Enter City"
+            placeholder="Enter city"
             required
           />
         </div>
@@ -50,7 +50,7 @@
             <option value="<%= item.categoryId._id %>">
               --- <%= item.categoryId.name %> ---
             </option>
-            <% for(let i = 0; i < category.length; i++){ %>
+            <% for(let i = 0; i< category.length; i++){ %>
             <option value="<%= category[i].id %>">
               <%= category[i].name %>
             </option>
